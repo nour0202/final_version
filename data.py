@@ -12,17 +12,12 @@ st.markdown('---')
 
 #insert select box
 
-if "visibility" not in st.session_state:
-    st.session_state.visibility = "visible"
-    st.session_state.disabled = False
 
-option = st.selectbox(
+
+Segment = st.selectbox(
         "Select a Segment",
-        ("All", "Consumer", "Home Office Segment", "Corporate"),
-        key=df,
-        label_visibility=st.session_state.visibility,
-        disabled=st.session_state.disabled,
-)
+        ("All", "Consumer", "Home Office Segment", "Corporate"))
+st.write('You selected:', Segment)
 
 #bar graph
 
