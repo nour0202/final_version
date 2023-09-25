@@ -10,8 +10,6 @@ st.subheader('Welcome to XYZ Co!')
 
 st.markdown('---')
 
-df=pd.read_csv("https://raw.githubusercontent.com/nour0202/final_version/main/Data_set.csv")
-
 #insert select box
 
 if "visibility" not in st.session_state:
