@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
-df=pd.read_csv("https://raw.githubusercontent.com/nour0202/final_version/main/Data_set.csv", encoding='utf-8')
+df=pd.read_csv("https://raw.githubusercontent.com/nour0202/final_version/main/Data_set.csv", encoding='utf-8', , nrows=10000)
 
 st.set_page_config(page_title='Company Portfolio')
 st.title('Company Portfolio 2023')
