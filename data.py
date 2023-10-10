@@ -20,10 +20,13 @@ fig = px.bar(
     fil_df if selected_Segment != 'All' else df, 
     x="Segment", 
     y="Profit",   
-    title="Profit Per Customer Segment"
+    title="Profit Distribution by Customer Segment"
 )
 
 st.plotly_chart(fig) 
+
+st.write("This pie chart the percentages of profit as of each segment.")
+st.write("As shown in the figure, Consumer Segment accounts for the highest portion of profits which is approximately 45K.")
 
 st.markdown("---") #horizontal line
 
@@ -45,5 +48,9 @@ fig = px.histogram(
     title="Sales Across the States"
 )
 fig
+
+st.write("This bar chart shows the total sales for each state within the specified range. You can scroll the slide bar and specify the minimum and the maximum amount of sales.")
+st.write("By hovering on the columns, California registered the highest sales, then New York, and then Washington having 146K, 93k, 65k, respectively.")
+
 
 st.markdown("---")
