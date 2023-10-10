@@ -25,19 +25,6 @@ fig = px.bar(
 
 st.plotly_chart(fig) 
 
-
-#bar graph
-
-fig = px.bar(
-      df,
-      x="Segment",
-      y="Profit",
-      title="Profit Per Customer Segment"       
-)
-fig 
-
-st.markdown("---") #horizontal line
-
 st.markdown("---") #horizontal line
 
 # Group by the "State" column and sum the "Sales" column
